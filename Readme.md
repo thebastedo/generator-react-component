@@ -6,14 +6,17 @@ A [Yeoman](http://yeoman.io) generator for authoring sharable react comopnents.
 This generator makes use of [Webpack](https://webpack.github.io/), [Rollup](http://rollupjs.org/),
 [Stylus](http://stylus-lang.com/), [CSS Modules](https://github.com/mtojo/rollup-plugin-stylus-css-modules),
 and a few other tools. The goal of this is to provide a quick and easy setup for
-building and sharing [React](https://facebook.github.io/react/). Other than the
+building and sharing [React](https://facebook.github.io/react/) components. Other than the
 build tools the aim is to keep it as unopinionated as possible.
 
 ## File Structure
 
 ```
 my-component
-  |-src
+  |- lib
+  |  |- MyComponent.js // Compiled JS Component
+  |  |- MyComponent.css // Compiled CSS
+  |- src
   |  |-demo
   |  |  |- app.js // Demo application file
   |  |  |- index.html // Demo application HTML file
@@ -86,8 +89,7 @@ $ npm start
 # Testing
 
 Right now [jest](https://facebook.github.io/jest/) is the provided testing framework,
-althought configured a bit differently. Rather than looking for a <code>\_\_TESTS\_\_</code>
-folder, it matches <code>src/**/*.spec.js</code>. Use the typical npm command to
+gitfolder, it matches <code>src/**/*.spec.js</code>. Use the typical npm command to
 run the tests.
 
 ```bash
