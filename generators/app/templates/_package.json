@@ -14,7 +14,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "NODE_ENV=development webpack-dev-server --progress --inline --hot",
-    "build": "rm ./lib/* && NODE_ENV=production rollup -c",
+    "build": "NODE_ENV=production rollup -c",
     "test": "jest"
   },
   "keywords": [
